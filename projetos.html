@@ -1,3 +1,8 @@
+Aqui está o código HTML completo para a página de projetos, sem nenhuma referência a doação ou apoio.
+
+Copie e cole este código em um novo arquivo para ter a página pronta.
+
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -12,9 +17,9 @@
             box-sizing: border-box;
             font-family: 'Orbitron', 'Share Tech Mono', monospace;
         }
-        
+
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap');
-        
+
         :root {
             --neon-cyan: #0ff0fc;
             --neon-pink: #ff2d95;
@@ -24,25 +29,25 @@
             --darker-bg: #030311;
             --grid-color: rgba(0, 245, 255, 0.1);
         }
-        
+
         body {
             line-height: 1.6;
             color: #fff;
             background-color: var(--dark-bg);
             overflow-x: hidden;
-            background-image: 
+            background-image:
                 linear-gradient(var(--grid-color) 1px, transparent 1px),
                 linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
             background-size: 30px 30px;
         }
-        
+
         .container {
             width: 90%;
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 15px;
         }
-        
+
         /* Efeito de scanlines */
         body::after {
             content: "";
@@ -61,7 +66,7 @@
             pointer-events: none;
             z-index: 100;
         }
-        
+
         header {
             background-color: rgba(5, 5, 32, 0.8);
             box-shadow: 0 2px 20px rgba(0, 245, 255, 0.3);
@@ -72,14 +77,14 @@
             backdrop-filter: blur(5px);
             border-bottom: 1px solid var(--neon-cyan);
         }
-        
+
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px 0;
         }
-        
+
         .logo {
             font-size: 28px;
             font-weight: 900;
@@ -94,17 +99,17 @@
             align-items: center;
             gap: 10px;
         }
-        
+
         .nav-links {
             display: flex;
             list-style: none;
         }
-        
+
         .nav-links li {
             margin-left: 30px;
             position: relative;
         }
-        
+
         .nav-links a {
             text-decoration: none;
             color: var(--neon-cyan);
@@ -114,12 +119,12 @@
             letter-spacing: 1px;
             font-size: 14px;
         }
-        
+
         .nav-links a:hover {
             color: var(--neon-pink);
             text-shadow: 0 0 10px var(--neon-pink);
         }
-        
+
         .nav-links a::after {
             content: "";
             position: absolute;
@@ -130,11 +135,11 @@
             background: var(--neon-cyan);
             transition: width 0.3s;
         }
-        
+
         .nav-links a:hover::after {
             width: 100%;
         }
-        
+
         .cta-button {
             background: linear-gradient(45deg, var(--neon-cyan), var(--neon-green));
             color: var(--dark-bg);
@@ -150,12 +155,12 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         .cta-button:hover {
             box-shadow: 0 0 20px rgba(0, 245, 255, 0.8);
             transform: translateY(-3px);
         }
-        
+
         .cta-button::before {
             content: "";
             position: absolute;
@@ -171,11 +176,11 @@
             transform: rotate(45deg);
             transition: all 0.3s;
         }
-        
+
         .cta-button:hover::before {
             animation: shine 1.5s infinite;
         }
-        
+
         @keyframes shine {
             0% {
                 left: -50%;
@@ -184,14 +189,14 @@
                 left: 100%;
             }
         }
-        
+
         .menu-toggle {
             display: none;
             cursor: pointer;
             font-size: 24px;
             color: var(--neon-cyan);
         }
-        
+
         .hero {
             padding: 180px 0 120px;
             text-align: center;
@@ -199,7 +204,7 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         .hero::before {
             content: "";
             position: absolute;
@@ -207,11 +212,11 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: 
+            background:
                 radial-gradient(circle at 20% 30%, rgba(255, 45, 149, 0.2) 0%, transparent 40%),
                 radial-gradient(circle at 80% 70%, rgba(0, 246, 169, 0.2) 0%, transparent 40%);
         }
-        
+
         .hero h1 {
             font-size: 4rem;
             margin-bottom: 25px;
@@ -226,7 +231,7 @@
             position: relative;
             display: inline-block;
         }
-        
+
         .hero h1::after {
             content: "";
             position: absolute;
@@ -236,7 +241,7 @@
             height: 4px;
             background: linear-gradient(90deg, transparent, var(--neon-cyan), transparent);
         }
-        
+
         .hero p {
             font-size: 1.4rem;
             max-width: 800px;
@@ -245,7 +250,7 @@
             text-shadow: 0 0 10px rgba(0, 246, 169, 0.3);
             font-family: 'Share Tech Mono', monospace;
         }
-        
+
         .btn {
             display: inline-block;
             background: transparent;
@@ -263,31 +268,31 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         .btn:hover {
             background: rgba(0, 245, 255, 0.1);
             box-shadow: 0 0 25px rgba(0, 245, 255, 0.6);
             transform: translateY(-5px);
         }
-        
+
         .btn-outline {
             background: transparent;
             border: 2px solid var(--neon-pink);
             color: var(--neon-pink);
             box-shadow: 0 0 15px rgba(255, 45, 149, 0.3);
         }
-        
+
         .btn-outline:hover {
             background: rgba(255, 45, 149, 0.1);
             box-shadow: 0 0 25px rgba(255, 45, 149, 0.6);
         }
-        
+
         .section-title {
             text-align: center;
             margin-bottom: 80px;
             position: relative;
         }
-        
+
         .section-title h2 {
             font-size: 2.8rem;
             color: var(--neon-yellow);
@@ -297,7 +302,7 @@
             text-shadow: 0 0 15px rgba(244, 232, 59, 0.4);
             letter-spacing: 3px;
         }
-        
+
         .section-title p {
             color: var(--neon-cyan);
             max-width: 700px;
@@ -305,7 +310,7 @@
             font-size: 1.2rem;
             font-family: 'Share Tech Mono', monospace;
         }
-        
+
         .section-title::after {
             content: "";
             position: absolute;
@@ -316,14 +321,14 @@
             height: 3px;
             background: linear-gradient(90deg, var(--neon-pink), var(--neon-cyan));
         }
-        
+
         /* Seção Projetos em Desenvolvimento */
         .projects {
             padding: 100px 0;
             background-color: var(--darker-bg);
             position: relative;
         }
-        
+
         .projects::before {
             content: "";
             position: absolute;
@@ -333,13 +338,13 @@
             height: 1px;
             background: linear-gradient(90deg, transparent, var(--neon-green), transparent);
         }
-        
+
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 40px;
         }
-        
+
         .project-card {
             background: rgba(5, 5, 32, 0.6);
             border-radius: 8px;
@@ -352,7 +357,7 @@
             backdrop-filter: blur(5px);
             overflow: hidden;
         }
-        
+
         .project-card::before {
             content: "";
             position: absolute;
@@ -366,55 +371,55 @@
             opacity: 0;
             transition: opacity 0.4s;
         }
-        
+
         .project-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(244, 232, 59, 0.2);
         }
-        
+
         .project-card:hover::before {
             opacity: 1;
         }
-        
+
         .project-header {
             display: flex;
             align-items: center;
             margin-bottom: 20px;
         }
-        
+
         .project-icon {
             font-size: 40px;
             color: var(--neon-yellow);
             margin-right: 15px;
             text-shadow: 0 0 10px rgba(244, 232, 59, 0.3);
         }
-        
+
         .project-card h3 {
             color: var(--neon-yellow);
             font-size: 1.5rem;
             text-shadow: 0 0 10px rgba(244, 232, 59, 0.3);
         }
-        
+
         .project-card p {
             color: #b5b5ff;
             margin-bottom: 25px;
             font-family: 'Share Tech Mono', monospace;
             line-height: 1.7;
         }
-        
+
         .project-status {
             display: flex;
             align-items: center;
             margin-bottom: 20px;
         }
-        
+
         .status-label {
             font-size: 0.9rem;
             color: var(--neon-cyan);
             margin-right: 10px;
             font-family: 'Share Tech Mono', monospace;
         }
-        
+
         .progress-bar {
             flex-grow: 1;
             height: 8px;
@@ -422,7 +427,7 @@
             border-radius: 4px;
             overflow: hidden;
         }
-        
+
         .progress-fill {
             height: 100%;
             background: linear-gradient(90deg, var(--neon-yellow), var(--neon-green));
@@ -430,32 +435,32 @@
             width: 0;
             transition: width 1.5s ease-in-out;
         }
-        
+
         .project-card:hover .progress-fill {
             width: var(--progress);
         }
-        
+
         .progress-value {
             font-size: 0.9rem;
             color: var(--neon-yellow);
             margin-left: 10px;
             font-family: 'Share Tech Mono', monospace;
         }
-        
+
         .project-features {
             margin-bottom: 25px;
         }
-        
+
         .project-features h4 {
             color: var(--neon-cyan);
             margin-bottom: 10px;
             font-size: 1.1rem;
         }
-        
+
         .project-features ul {
             list-style: none;
         }
-        
+
         .project-features li {
             color: #b5b5ff;
             margin-bottom: 8px;
@@ -463,19 +468,19 @@
             position: relative;
             padding-left: 20px;
         }
-        
+
         .project-features li::before {
             content: "▸";
             position: absolute;
             left: 0;
             color: var(--neon-green);
         }
-        
+
         .project-card .btn {
             padding: 10px 20px;
             font-size: 0.9rem;
         }
-        
+
         /* Rodapé */
         footer {
             background-color: var(--darker-bg);
@@ -483,44 +488,44 @@
             padding: 60px 0 30px;
             border-top: 1px solid var(--neon-cyan);
         }
-        
+
         .footer-content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 40px;
             margin-bottom: 40px;
         }
-        
+
         .footer-column h3 {
             font-size: 18px;
             margin-bottom: 20px;
             color: var(--neon-green);
         }
-        
+
         .footer-column ul {
             list-style: none;
         }
-        
+
         .footer-column ul li {
             margin-bottom: 10px;
         }
-        
+
         .footer-column a {
             color: #cbd5e1;
             text-decoration: none;
             transition: color 0.3s;
             font-family: 'Share Tech Mono', monospace;
         }
-        
+
         .footer-column a:hover {
             color: var(--neon-cyan);
         }
-        
+
         .social-links {
             display: flex;
             gap: 15px;
         }
-        
+
         .social-links a {
             display: inline-block;
             width: 40px;
@@ -533,11 +538,11 @@
             color: white;
             text-decoration: none;
         }
-        
+
         .social-links a:hover {
             background-color: var(--neon-cyan);
         }
-        
+
         .copyright {
             text-align: center;
             padding-top: 30px;
@@ -545,12 +550,12 @@
             color: #cbd5e1;
             font-family: 'Share Tech Mono', monospace;
         }
-        
+
         /* Efeitos de neon pulsante */
         .pulse {
             animation: pulse 2s infinite;
         }
-        
+
         @keyframes pulse {
             0% {
                 text-shadow: 0 0 5px rgba(0, 245, 255, 0.7);
@@ -562,13 +567,13 @@
                 text-shadow: 0 0 5px rgba(0, 245, 255, 0.7);
             }
         }
-        
+
         /* Responsividade */
         @media (max-width: 768px) {
             .menu-toggle {
                 display: block;
             }
-            
+
             .nav-links {
                 position: fixed;
                 top: 80px;
@@ -583,15 +588,15 @@
                 backdrop-filter: blur(10px);
                 border-top: 1px solid var(--neon-cyan);
             }
-            
+
             .nav-links.active {
                 left: 0;
             }
-            
+
             .nav-links li {
                 margin: 20px 0;
             }
-            
+
             .hero h1 {
                 font-size: 2.5rem;
             }
@@ -599,7 +604,6 @@
     </style>
 </head>
 <body>
-    <!-- Cabeçalho -->
     <header>
         <div class="container">
             <nav>
@@ -612,16 +616,14 @@
                     <li><a href="index.html#mission">Missão</a></li>
                     <li><a href="index.html#programs">Programas</a></li>
                     <li><a href="projetos.html">Projetos</a></li>
-                    <li><a href="index.html#donation">Doação</a></li>
                     <li><a href="index.html#contact">Contato</a></li>
                 </ul>
-                <a href="index.html#donation" class="cta-button">Doar</a>
+                <a href="index.html#contact" class="cta-button">Entre em contato</a>
                 <div class="menu-toggle">☰</div>
             </nav>
         </div>
     </header>
 
-    <!-- Seção Herói -->
     <section class="hero">
         <div class="container">
             <h1>Projetos em <span class="pulse">Desenvolvimento</span></h1>
@@ -629,7 +631,6 @@
         </div>
     </section>
 
-    <!-- Seção Projetos em Desenvolvimento -->
     <section class="projects">
         <div class="container">
             <div class="section-title">
@@ -645,7 +646,7 @@
                     <img src="Robô quadru
 upede.jpeg" alt="Imagem">
                     <p>Robô de mineração com design inspirado em um animal quadrupede, capaz de auxiliar atividades perigosas de mineração.</p>
-                    
+
                     <div class="project-status">
                         <span class="status-label">Desenvolvimento:</span>
                         <div class="progress-bar">
@@ -653,7 +654,7 @@ upede.jpeg" alt="Imagem">
                         </div>
                         <span class="progress-value">75%</span>
                     </div>
-                    
+
                     <div class="project-features">
                         <h4>Recursos Principais:</h4>
                         <ul>
@@ -663,17 +664,15 @@ upede.jpeg" alt="Imagem">
                             <li>Integração com dispositivos industriais</li>
                         </ul>
                     </div>
-                    
-                    <a href="index.html#donation" class="btn">Apoie este Projeto</a>
                 </div>
-                
+
                 <div class="project-card">
                     <div class="project-header">
                         <div class="project-icon"><i class="fas fa-laptop-code"></i></div>
                         <h3>Ventilador</h3>
                     </div>
                     <p></p>
-                    
+
                     <div class="project-status">
                         <span class="status-label">Desenvolvimento:</span>
                         <div class="progress-bar">
@@ -681,21 +680,21 @@ upede.jpeg" alt="Imagem">
                         </div>
                         <span class="progress-value">60%</span>
                     </div>
-                    
+
                     <div class="project-features">
                         <h4>Recursos Principais:</h4>
                         <ul>
                             <li>l</li>
                             <li></li>
                             <li></li>
-                                                        <li></li>
+                            <li></li>
                         </ul>
                     </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Rodapé -->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -710,7 +709,6 @@ upede.jpeg" alt="Imagem">
                         <li><a href="index.html#mission">Missão</a></li>
                         <li><a href="index.html#programs">Programas</a></li>
                         <li><a href="projetos.html">Projetos</a></li>
-                        <li><a href="index.html#donation">Doação</a></li>
                         <li><a href="index.html#contact">Contato</a></li>
                     </ul>
                 </div>
@@ -743,7 +741,7 @@ upede.jpeg" alt="Imagem">
         document.querySelector('.menu-toggle').addEventListener('click', function() {
             document.querySelector('.nav-links').classList.toggle('active');
         });
-        
+
         // Inicia as barras de progresso
         document.addEventListener('DOMContentLoaded', function() {
             setTimeout(function() {
@@ -755,21 +753,4 @@ upede.jpeg" alt="Imagem">
     </script>
 </body>
 </html>
-
-
-// Menu toggle para mobile
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('active');
-        });
-        
-        // Efeito de digitação no título
-        document.addEventListener('DOMContentLoaded', function() {
-            const heroTitle = document.querySelector('.hero h1');
-            heroTitle.classList.add('pulse');
-        });
-    </script>
-</body>
-</html>
-
-
-
+```
