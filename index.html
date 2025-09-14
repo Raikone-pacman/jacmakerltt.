@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JACMAKER - </title>
+    <title>JACMAKER - Instituto de Robótica Retrofuturista</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -14,6 +13,89 @@
             font-family: 'Orbitron', 'Share Tech Mono', monospace;
         }
 
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #111;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .cta-button {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        .mission-text {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .mission-text p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .mission-image {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .mission-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -21,8 +103,7 @@
         <div class="container">
             <nav>
                 <a href="#" class="logo">
-                    <i class="fas fa-robot"></i>
-                    JACMAKER
+                    <i class="fas fa-robot"></i> JACMAKER
                 </a>
                 <ul class="nav-links">
                     <li><a href="#">Início</a></li>
@@ -33,12 +114,49 @@
                     <li><a href="#contact">Contato</a></li>
                 </ul>
                 <a href="#donation" class="cta-button">Doar</a>
-                <div class="menu-toggle">☰</div>
             </nav>
         </div>
     </header>
 
-A robótica e a impressão 3D não são apenas tecnologias; são ferramentas de mudança social no Norte da Bahia.</p> <p>Desenvolvemos soluções com eficiência sempre com foco em beneficiar a nossa comunidade.</p> <p>Nossos valores: Inovação, Acessibilidade Tecnológica, e Impacto Social Real.</p> </div> <div class="mission-image"> <img> src=https://drive.google.com/file/d/16FN78QxT34JGgOG9usG2pV5WVye6C7DJ/view?usp=drivesdk" alt="Visão desafiadora"> </div> </div> </div> </section>
+    <!-- Seção Missão -->
+    <section id="mission">
+        <div class="mission-text">
+            <p>A robótica e a impressão 3D não são apenas tecnologias; são ferramentas de mudança social no Norte da Bahia.</p>
+            <p>Desenvolvemos soluções com eficiência sempre com foco em beneficiar a nossa comunidade.</p>
+            <p>Nossos valores: Inovação, Acessibilidade Tecnológica, e Impacto Social Real.</p>
+        </div>
+        <div class="mission-image">
+            <img src="https://drive.google.com/uc?export=view&id=16FN78QxT34JGgOG9usG2pV5WVye6C7DJ" alt="Visão desafiadora">
+        </div>
+    </section>
 
+    <!-- Seção Programas -->
+    <section id="programs">
+        <div class="container">
+            <h2 style="text-align:center; margin-bottom:40px;">Programas em Desenvolvimento</h2>
+            <p style="text-align:center;">Aqui você pode descrever os projetos e programas que estão em andamento.</p>
+        </div>
+    </section>
+
+    <!-- Seção Doação -->
+    <section id="donation">
+        <div class="container">
+            <h2 style="text-align:center; margin-bottom:40px;">Como Doar</h2>
+            <p style="text-align:center;">Informações sobre como apoiar o nosso trabalho e contribuir para os projetos.</p>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contact">
+        <div class="container">
+            <h2 style="text-align:center; margin-bottom:40px;">Contato</h2>
+            <p style="text-align:center;">Formas de entrar em contato conosco, redes sociais ou formulário de contato.</p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2025 JACMAKER - Instituto de Robótica Retrofuturista. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
